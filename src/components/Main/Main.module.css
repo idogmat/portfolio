@@ -1,0 +1,32 @@
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 0;
+    background: #c6bd60;
+}
+.mainHero{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    border:1px solid #61dafb;
+}
+.heroInfo{
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.heroPhoto img{
+    height: 400px;
+    width: 300px;
+}
