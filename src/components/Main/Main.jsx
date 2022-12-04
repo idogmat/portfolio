@@ -6,30 +6,13 @@ const options={
     fullScreen: {
         enable: false
     },
-    background: {
-        color: {
-            value: "#2a2d38",
-        },
-    },
-    fpsLimit: 120,
-    interactivity: {
-        modes: {
-            push: {
-                quantity: 4,
-            },
-            repulse: {
-                distance: 200,
-                duration: 0.4,
-            },
-        },
-    },
     particles: {
         color: {
-            value: "#ffffff",
+            value: 'blue',
         },
         links: {
-            color: "#ffffff",
-            distance: 150,
+            color: '#4e93e6',
+            distance: 200,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -38,11 +21,7 @@ const options={
             enable: true,
         },
         move: {
-            directions: "none",
             enable: true,
-            outModes: {
-                default: "bounce",
-            },
             random: false,
             speed: 2,
             straight: false,
@@ -50,21 +29,17 @@ const options={
         number: {
             density: {
                 enable: true,
-                area: 800,
+                value_area: 1000,
             },
-            value: 80,
+            value: 150,
         },
         opacity: {
-            value: 0.5,
+            value: 0.7,
         },
         shape: {
-            type: "circle",
+            type: 'circle',
         },
-        size: {
-            value: { min: 1, max: 5 },
-        },
-    },
-    detectRetina: true,
+    }
 }
 
 const Main = () => {
@@ -72,6 +47,7 @@ const Main = () => {
         await loadFull(engine);
     }, []);
     const particlesLoaded = useCallback(async container => {
+        await console.log(container);
     }, []);
 
     return (

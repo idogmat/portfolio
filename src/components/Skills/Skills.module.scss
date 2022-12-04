@@ -3,7 +3,9 @@
 .skills {
   min-height: 100vh;
   padding: 50px;
-  background: $bgSecondColor;
+  background-image: url("../../assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h2 {
     font-size: 4rem;

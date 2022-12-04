@@ -9,8 +9,12 @@
     flex-wrap: nowrap;
     justify-content: center;
     min-height: 100vh;
+    background-image: url("../../assets/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -51;
 
-    background: transparent;
+    //background: #000000;
     .tsparticles{
         position: absolute;
         top: 0;
