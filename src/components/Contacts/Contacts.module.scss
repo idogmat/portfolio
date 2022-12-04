@@ -1,0 +1,50 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.contacts {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+
+
+  .sendForm {
+    @include container();
+      width: 540px;
+      margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    input,textarea {
+      color:white;
+      padding: 1rem;
+      margin-bottom: 20px;
+      background: $bgSecondColor;
+      border-radius: 30px;
+      border: 3px solid #4a4a4a;
+      box-sizing: border-box;
+      outline: none;
+      resize: none;
+      &::placeholder{
+        color: white;
+      }
+      &:focus{
+        border: 3px solid white;
+      }
+    }
+    button {
+      width: 200px;
+      border-radius: 50px;
+      border: 1px solid white;
+      outline: none;
+      margin: auto;
+      transition: all .4s;
+      margin-bottom: 20px;
+      &:hover{
+        border: 1px solid white;
+        background: #000;
+        color: white;
+        transition: all .4s;
+      }
+    }
+  }
+}

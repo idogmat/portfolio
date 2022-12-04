@@ -1,0 +1,47 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.main{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+
+    background: transparent;
+    .tsparticles{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .3;
+        z-index: -50;
+    }
+    .mainHero{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include container();
+        .heroInfo{
+            align-items: flex-start;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+        }
+        .heroPhoto{
+            height: 300px;
+            width: 300px;
+            background-image: url('../../assets/me.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

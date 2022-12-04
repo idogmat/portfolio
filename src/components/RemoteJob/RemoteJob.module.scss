@@ -1,0 +1,26 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+.remoteContacts {
+  min-height: 100vh;
+
+  background: $bgSecondColor;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  .remote {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 20vh;
+
+
+
+  }
+
+
+}
+
+
+
