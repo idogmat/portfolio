@@ -8,6 +8,8 @@
   line-height: $lineHeight;
   font-weight: $fontWeight;
 }
-@mixin title{
-  
+@mixin bg($bg){
+  background-image: url(('../../assets/'+$bg));
+  background-repeat: no-repeat;
+  background-size:100% 100% ;
 }

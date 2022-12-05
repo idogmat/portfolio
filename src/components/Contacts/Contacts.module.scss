@@ -29,6 +29,7 @@
       }
       &:focus{
         border: 3px solid white;
+        transition: all .3s;
       }
     }
     button {
@@ -39,7 +40,14 @@
       margin: auto;
       transition: all .4s;
       margin-bottom: 20px;
+      cursor: pointer;
       &:hover{
+        border: 1px solid white;
+        background: #000;
+        color: white;
+        transition: all .4s;
+      }
+      &:focus{
         border: 1px solid white;
         background: #000;
         color: white;
