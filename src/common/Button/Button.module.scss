@@ -1,0 +1,22 @@
+.button {
+  width: 200px;
+  border-radius: 50px;
+  border: 1px solid white;
+  outline: none;
+  margin: auto;
+  transition: all .4s;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid white;
+    background: #000;
+    color: white;
+    transition: all .4s;
+  }
+  &:focus{
+    border: 1px solid white;
+    background: #000;
+    color: white;
+    transition: all .4s;
+  }
+}

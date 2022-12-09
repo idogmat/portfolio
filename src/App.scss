@@ -1,0 +1,20 @@
+@import './styles/variables';
+
+.App {
+  font-family: $textFont;
+  > div {
+    display: flex;
+    flex-direction: column;
+   > h2{
+      color: white;
+      margin: auto;
+      font-family: $titleFont;
+    }
+    >div>h2{
+      color: white;
+      margin: auto;
+      font-family: $titleFont;
+    }
+
+  }
+}

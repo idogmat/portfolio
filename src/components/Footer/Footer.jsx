@@ -3,7 +3,7 @@ import s from './Footer.module.css'
 import svg from '../../assets/react.svg'
 const Footer = () => {
     return (
-        <div className={s.footer}>
+        <footer className={s.footer}>
             <h4>Jack Rodin</h4>
             <div className={s.linksBlock}>
                 <img src={svg} alt=""/>
@@ -14,7 +14,7 @@ const Footer = () => {
             <span className={s.copywriting}>
                 © 2022 All Rights Reserved
             </span>
-        </div>
+        </footer>
     );
 };
 

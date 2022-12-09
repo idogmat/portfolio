@@ -9,11 +9,11 @@ const Header = () => {
     ]
 
     return (
-        <div className={s.header}>
+        <header className={s.header}>
             <nav className={s.headerNav}>
                 {nav.map(el=><a key={el.point} className={s.headerLinks}>{el.point}</a>)}
             </nav>
-        </div>
+        </header>
     );
 };
 

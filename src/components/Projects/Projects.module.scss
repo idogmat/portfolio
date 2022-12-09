@@ -35,13 +35,12 @@
         justify-content: center;
         margin: 30px 5px 0;
         text-align: center;
-        width: 280px;
 
         .projectIcon {
           display: flex;
-          width: 100px;
-          height: 100px;
-          background-size: cover;
+          width: 300px;
+          height: 250px;
+          background-size: 100% 100%;
           justify-content: center;
           align-content: center;
           a {

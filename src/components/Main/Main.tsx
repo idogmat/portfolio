@@ -62,9 +62,9 @@ const Main = () => {
             />
             <div className={s.mainHero}>
                 <div className={s.heroInfo}>
-                    <h4>Hi!
+                    <h2>Hi!
                         I'm Frontend developer.
-                        Please give me job offer</h4>
+                        Please give me job offer</h2>
                 </div>
                 <div className={s.heroPhoto}>
                 </div>
