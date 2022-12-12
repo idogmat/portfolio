@@ -2,11 +2,10 @@
   width: 80%;
   margin: 0 auto;
 }
-@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+@mixin text($fontFamily, $size, $weight) {
   font-family: $fontFamily;
-  font-size: $fontSize;
-  line-height: $lineHeight;
-  font-weight: $fontWeight;
+  font-size: $size;
+  font-weight: $weight;
 }
 @mixin bg($bg){
   background-image: url(('../../assets/'+$bg));

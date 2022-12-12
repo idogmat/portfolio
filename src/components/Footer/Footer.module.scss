@@ -1,16 +1,17 @@
+@import './src/styles/variables';
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
-    background: #000;
-    color: #61dafb;
+    background:  rgb(23, 23, 23);
+    color: $lightSecondColor;
     min-height: 20vh;
     padding: 20px 0;
+    h4{
+        margin: auto;
+    }
 }
 
-.user{
-
-}
 .linksBlock{
     padding: 20px 0;
     display: flex;
