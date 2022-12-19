@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import bg from "../../assets/bg-projects.jpg";
+import bg from "../../assets/images/bg-projects.jpg";
 
 const Projects = () => {
     return (
