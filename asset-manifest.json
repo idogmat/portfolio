@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7776eaef.css",
-    "main.js": "/portfolio/static/js/main.26646456.js",
+    "main.css": "/portfolio/static/css/main.0af762c1.css",
+    "main.js": "/portfolio/static/js/main.b3f19f22.js",
     "static/js/787.a71561b8.chunk.js": "/portfolio/static/js/787.a71561b8.chunk.js",
     "static/media/me.jpg": "/portfolio/static/media/me.bb7cfdf69d9c34eb10c0.jpg",
+    "static/media/mountains.png": "/portfolio/static/media/mountains.f0522c5c2a1e87d36d33.png",
     "static/media/main.jpg": "/portfolio/static/media/main.416bd8b768d384288c15.jpg",
-    "static/media/bg-projects.jpg": "/portfolio/static/media/bg-projects.a0ad6433cd3874af1c9f.jpg",
+    "static/media/todolist.png": "/portfolio/static/media/todolist.6bc91ecbf8601e34b16a.png",
     "static/media/postman.svg": "/portfolio/static/media/postman.648705b5f6469f0767a4736d07313ffe.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.02dda4cb70eb34023b9a05eecd50e50e.svg",
     "static/media/react.svg": "/portfolio/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
@@ -18,12 +19,12 @@
     "static/media/git.svg": "/portfolio/static/media/git.7bc790e0ea0e59c9d1271d011d119d0a.svg",
     "static/media/material-ui.svg": "/portfolio/static/media/material-ui.456bfb02539777f812137c514d397868.svg",
     "static/media/js.svg": "/portfolio/static/media/js.1192a303c7e00b85f5dedb939fd9a088.svg",
-    "main.7776eaef.css.map": "/portfolio/static/css/main.7776eaef.css.map",
-    "main.26646456.js.map": "/portfolio/static/js/main.26646456.js.map",
+    "main.0af762c1.css.map": "/portfolio/static/css/main.0af762c1.css.map",
+    "main.b3f19f22.js.map": "/portfolio/static/js/main.b3f19f22.js.map",
     "787.a71561b8.chunk.js.map": "/portfolio/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7776eaef.css",
-    "static/js/main.26646456.js"
+    "static/css/main.0af762c1.css",
+    "static/js/main.b3f19f22.js"
   ]
 }
