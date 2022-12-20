@@ -13,7 +13,7 @@ import Storybook from './../assets/icons/storybook.svg';
 import Postman from './../assets/icons/postman.svg';
 
 
-export const skillsData = [
+export const techData = [
     {
         id: '1',
         title: 'JavaScript',
@@ -47,9 +47,15 @@ export const skillsData = [
     },
     {
         id: '6',
-        title: 'Jest',
-        description: '6',
-        backgroundImage: `url(${Jest})`,
+        title: 'Material UI',
+        description: '9',
+        backgroundImage: `url(${MaterialUI})`,
+    },
+    {
+        id: '7',
+        title: 'Styled Components',
+        description: '10',
+        backgroundImage: `url(${styledComponents})`,
     },
 
     {
@@ -60,24 +66,19 @@ export const skillsData = [
     },
     {
         id: '9',
-        title: 'Material UI',
-        description: '9',
-        backgroundImage: `url(${MaterialUI})`,
+        title: 'Jest',
+        description: '6',
+        backgroundImage: `url(${Jest})`,
     },
+
     {
         id: '10',
-        title: 'Styled Components',
-        description: '10',
-        backgroundImage: `url(${styledComponents})`,
-    },
-    {
-        id: '11',
         title: 'Storybook',
         description: 'Tool for building UI components and pages in isolation.',
         backgroundImage: `url(${Storybook})`,
     },
     {
-        id: '12',
+        id: '11',
         title: 'GIT',
         description: 'Source code management.',
         backgroundImage: `url(${GIT})`,

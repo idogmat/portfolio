@@ -1,0 +1,53 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.projectElement {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 30px 5px 0;
+  text-align: center;
+
+  .projectIcon {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    background-size: 100% 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    a {
+      margin: auto;
+      text-decoration: none;
+      //border: 1px solid #000000;
+      font-size: 1.5rem;
+      color: #000;
+      opacity: .5;
+    }
+    a:hover {
+      opacity: 1;
+    }
+  }
+  .techs {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .tech {
+      background: #fff;
+      color: #000;
+      padding: .3rem;
+      margin: .3rem;
+      border-radius: 20px;
+
+    }
+  }
+}
+
+
+
+
+

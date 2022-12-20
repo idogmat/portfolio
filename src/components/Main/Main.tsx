@@ -2,6 +2,8 @@ import React, {useCallback} from 'react';
 import s from './Main.module.scss'
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
+import TypingEffect from 'react-typing-effect';
+import Tilt from 'react-parallax-tilt'
 
 const options={
     fullScreen: {
@@ -32,7 +34,8 @@ const options={
                 enable: true,
                 value_area: 1500,
             },
-            value: 80,
+            // value: 80,
+            value: 200,
         },
         opacity: {
             value: 0.7,
@@ -62,15 +65,18 @@ const Main = () => {
             />
             <div className={s.mainHero}>
                 <div className={s.heroInfo}>
-                    <h2>Hi!
-                        I'm Frontend developer.
-                        Please give me job offer</h2>
+                    <span>Hi there!</span>
+                    <h2>I'm Evgeny Rodin</h2>
+                    <TypingEffect speed={50} eraseSpeed={20} cursorClassName={s.typingText} text={'Front-end developer'}/>
                 </div>
-                <div className={s.heroPhoto}>
+                <Tilt  className={'Tilt'}>
+                    <div className={s.heroPhoto}>
+                        <div className={s.image}>
+                        </div>
+                    </div>
+                </Tilt>
                 </div>
             </div>
-
-        </div>
     );
 };
 

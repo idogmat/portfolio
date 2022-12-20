@@ -27,6 +27,7 @@
       box-sizing: border-box;
       outline: none;
       resize: none;
+      cursor: default;
       &::placeholder{
         color: white;
       }

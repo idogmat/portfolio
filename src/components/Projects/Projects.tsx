@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import bg from "../../assets/images/bg-projects.jpg";
+import {projectsData} from "../../resource/projects";
+import Project from "./Project/Project";
 
 const Projects = () => {
     return (
@@ -8,34 +9,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className={s.projectsContainer}>
                 <div className={s.projectsRow}>
-                    <div className={s.projectElement}>
-                        <div className={s.projectIcon} style={{backgroundImage: `url(${bg})`}}>
-                            <a href="#">Show</a>
-                        </div>
-                        <h4>React</h4>
-                        <span>talespin on website</span>
-                    </div>
-                    <div className={s.projectElement}>
-                        <div className={s.projectIcon} style={{backgroundImage: `url(${bg})`}}>
-                            <a href="#">Show</a>
-                        </div>
-                        <h4>React</h4>
-                        <span>talespin on website</span>
-                    </div>
-                    <div className={s.projectElement}>
-                        <div className={s.projectIcon} style={{backgroundImage: `url(${bg})`}}>
-                            <a href="#">Show</a>
-                        </div>
-                        <h4>React</h4>
-                        <span>talespin on website</span>
-                    </div>
-                    <div className={s.projectElement}>
-                        <div className={s.projectIcon} style={{backgroundImage: `url(${bg})`}}>
-                            <a href="#">Show</a>
-                        </div>
-                        <h4>React</h4>
-                        <span>talespin on website</span>
-                    </div>
+                    {projectsData.map(p=><Project key={p.id} {...p}/>)}
                 </div>
             </div>
         </div>

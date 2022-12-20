@@ -1,6 +1,9 @@
 @import './styles/variables';
 
 .App {
+  cursor: default;
+  position: relative;
+  z-index: 1;
   font-family: $textFont;
   > div {
     display: flex;
