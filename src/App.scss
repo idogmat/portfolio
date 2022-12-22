@@ -1,6 +1,7 @@
 @import './styles/variables';
 
 .App {
+  overflow: hidden;
   cursor: default;
   position: relative;
   z-index: 1;

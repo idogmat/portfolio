@@ -5,11 +5,11 @@ import Project from "./Project/Project";
 
 const Projects = () => {
     return (
-        <div className={s.projects}>
+        <div id={'projects'} className={s.projects}>
             <h2>Projects</h2>
             <div className={s.projectsContainer}>
                 <div className={s.projectsRow}>
-                    {projectsData.map(p=><Project key={p.id} {...p}/>)}
+                    {projectsData.map((p,i)=><Project key={p.id+i} {...p}/>)}
                 </div>
             </div>
         </div>

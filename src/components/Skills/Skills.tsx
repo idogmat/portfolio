@@ -5,7 +5,7 @@ import {techData} from "../../resource/tech";
 import Skill from "./Skill";
 const Skills = () => {
     return (
-        <div className={s.skills}>
+        <div id={'skills'} className={s.skills}>
             <h2>Skills</h2>
             <div className={s.skillsContainer}>
                 <div className={s.skillsRow}>

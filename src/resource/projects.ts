@@ -8,8 +8,8 @@ export const projectsData = [
     {
         id: '1',
         title: 'Todolist',
-        description: 'ReactJS, TypeScript, redux/toolkit, axios, SCSS, StyledComponent',
-        tech: ['ReactJS', 'TypeScript', 'redux/toolkit', 'axios', 'SCSS', 'StyledComponent'],
+        description: 'You may create tasks and forget complete them',
+        tech: ['ReactJS', 'TypeScript', 'redux/toolkit', 'axios', 'SCSS'],
         backgroundImage: `url(${todolist})`,
         repoLink: 'https://github.com/idogmat/todo-list-ts',
         demoLink: 'https://idogmat.github.io/todo-list-ts/'
@@ -17,7 +17,7 @@ export const projectsData = [
     {
         id: '2',
         title: 'Portfolio',
-        description: 'Vue, Vuex, pug, postcss, axios',
+        description: 'App with admin-panel and so long loading...',
         tech: ['Vue', 'Vuex', 'pug', 'postcss', 'axios'],
         backgroundImage: `url(${mountains})`,
         repoLink: 'https://github.com/idogmat/Mountains',

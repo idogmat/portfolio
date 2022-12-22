@@ -1,9 +1,10 @@
 import React from 'react';
 import s from './Contacts.module.scss'
 import Button from "../../common/Button/Button";
+const Zoom = require('react-reveal/Zoom')
 const Contacts = () => {
-    return (
-        <div className={s.contacts}>
+    return <Zoom>
+        <div id={'contacts'} className={s.contacts}>
             <h2>Contacts</h2>
             <form className={s.sendForm} action="">
                 <input placeholder={'Name'} type="text"/>
@@ -13,7 +14,7 @@ const Contacts = () => {
             </form>
 
         </div>
-    );
+    </Zoom>
 };
 
 export default Contacts;

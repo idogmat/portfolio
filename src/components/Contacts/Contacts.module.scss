@@ -19,7 +19,7 @@
     }
     input,textarea {
       color:white;
-      padding: 1rem;
+      padding: 0.7rem 0.7rem 0.3rem 0.7rem;
       margin-bottom: 20px;
       background: $bgSecondColor;
       border-radius: 30px;
@@ -32,10 +32,19 @@
       //border-top:3px solid transparent;
       //border-left:3px solid transparent;
       background: transparent;
+      font-family:inherit;
       &::placeholder{
         color: white;
       }
       &:focus{
+        border-bottom: 3px solid white;
+        transition: all .4s;
+      }
+    }
+    textarea {
+      border-top: 3px solid #4a4a4a;
+      &:focus{
+        border-top: 3px solid white;
         border-bottom: 3px solid white;
         transition: all .4s;
       }
