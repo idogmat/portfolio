@@ -24,28 +24,26 @@
       background: $bgSecondColor;
       border-radius: 30px;
       border: none;
-      border-bottom: 3px solid #4a4a4a;
+      border-bottom: 1px solid #4a4a4a;
       box-sizing: border-box;
       outline: none;
       resize: none;
       cursor: default;
-      //border-top:3px solid transparent;
-      //border-left:3px solid transparent;
       background: transparent;
       font-family:inherit;
       &::placeholder{
         color: white;
       }
       &:focus{
-        border-bottom: 3px solid white;
+        border-bottom: 1px solid white;
         transition: all .4s;
       }
     }
     textarea {
-      border-top: 3px solid #4a4a4a;
+      border-top: 1px solid #4a4a4a;
       &:focus{
-        border-top: 3px solid white;
-        border-bottom: 3px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
         transition: all .4s;
       }
     }
