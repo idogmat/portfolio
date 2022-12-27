@@ -8,7 +8,10 @@ const Header = () => {
     return (
         <header className={s.header}>
             <nav className={s.headerNav}>
-                {nav.map(el=><Link key={el.point} {...el} className={s.headerLinks}>{el.point}</Link>)}
+                {nav.map(el=><Link activeClass={s.active} key={el.point} {...el} className={s.headerLinks}>{el.point}</Link>)}
+            </nav>
+            <nav className={s.miniMenu}>
+                {nav.map(el=><Link activeClass={s.active} key={el.point} {...el} className={s.miniLinks}>{el.point}</Link>)}
             </nav>
         </header>
     );

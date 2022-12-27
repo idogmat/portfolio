@@ -20,27 +20,33 @@
     width: 100%;
 
     .skillsRow {
-      align-items: center;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
+
         .skillElement {
             align-items: center;
             color: #fff;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: center;
+
             margin: 30px 5px 0;
             text-align: center;
             width: 280px;
-
+          span{
+            //text-align:
+          }
+          @media screen and (max-width: 725px){
+            width: 120px;
+          }
             .skillIcon {
                 width: 4rem;
                 height: 4rem;
                 background-size: cover;
+
             }
         }
     }
