@@ -22,6 +22,10 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 340px;
+        @media screen and (max-width: 800px){
+            transform: translateX(100%);
+            transition: .5s;
+        }
         .headerLinks{
             position: relative;
             color: #fff;
@@ -64,14 +68,14 @@
 }
 .miniMenu{
     width: 100%;
-    //display: none;
+    left: -20px;
     transform: translateY(-100%);
     height: 50%;
     transition: 1s;
     @media screen and (max-width: 800px){
         display: flex;
         position: fixed;
-        transform: translateY(0);
+        transform: translateY(-50%);
         transition: 1s;
     }
     &:before{
@@ -81,12 +85,43 @@
         background: #fff;
     }
 }
-.miniLinks{
-    display: none;
-    color: #fff;
-    cursor: pointer;
-    font-family: Josefin Sans,sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.2;
+
+
+.miniNav{
+    height: 30%;
+    width: 10%;
+    transition: .5s;
+    background: #000000;
+    transform: translate(-100%,-800%);
+    opacity: .1;
+
+}
+.miniNavActive{
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    background: #000000;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    .miniLinks{
+        color: #fff;
+        cursor: pointer;
+        margin:auto 5px;
+        font-family: Josefin Sans,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        z-index: 5;
+        &:hover{
+            color: #61dafb;
+        }
+    }
+    button{
+
+    }
 }
