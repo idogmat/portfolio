@@ -11,7 +11,7 @@ const close=()=>setMimiMenu(false)
             <nav className={s.headerNav}>
                 {nav.map(el=><Link activeClass={s.active} key={el.point} {...el} className={s.headerLinks}>{el.point}</Link>)}
             </nav>
-            <div onClick={()=>setMimiMenu(s=>!s)} className={s.miniMenu}/> : <MiniMenu open={miniMenu} close={close}/>
+            <div onClick={()=>setMimiMenu(s=>!s)} className={miniMenu ? s.miniMenu +' '+ s.activeBurger :  s.miniMenu }/> : <MiniMenu open={miniMenu} close={close}/>
 
         </header>
     );
