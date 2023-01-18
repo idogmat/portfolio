@@ -30,7 +30,7 @@
         justify-content: space-around;
         @include container();
         @media screen and (max-width:750px){
-        flex-direction: column;
+            flex-direction: column;
             justify-content: space-between;
         }
         .heroInfo{
@@ -52,6 +52,10 @@
             background-image: url('../../assets/images/me.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            @media screen and (max-width:375px){
+                height: 250px;
+                width: 250px;
+            }
             &:before{
                 border: 5px solid #FFF;
                 content: "";

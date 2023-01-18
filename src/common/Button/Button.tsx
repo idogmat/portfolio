@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './Button.module.scss'
-type ButtonPropsType={
+
+interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     title:string
 }
-const Button = (props:ButtonPropsType) => {
-    return <button className={s.button}>{props.title}</button>
+const Button:FC<IButton> = ({title,...props}) => {
+    return <button {...props} className={s.button}>{title}</button>
 };
 
 export default Button;

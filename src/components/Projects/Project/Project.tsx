@@ -22,8 +22,8 @@ const Project: FC<ProjectType> = ({
     return <Zoom>
         <div className={s.projectElement}>
             <div className={s.projectIcon} style={{backgroundImage}}>
-                <a href={repoLink}>Show repo</a>
-                <a href={demoLink}>Show demo</a>
+                <a target={'_blank'} href={repoLink}>Show repo</a>
+                <a target={'_blank'} href={demoLink}>Show demo</a>
             </div>
             <h4>{title}</h4>
             <span className={s.description}>{description}</span>

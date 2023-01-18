@@ -12,7 +12,7 @@ const Footer = () => {
             <Fade right>
                 <div className={s.linksBlock}>
                     {contactLinks.map((el, i) => {
-                        return <a className={s.link} key={i} href={el.link}>
+                        return <a className={s.link} target="_blank" key={i} href={el.link}>
                             <img src={el.icon} alt={el.link}/>
                         </a>
                     })}

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import s from './Header.module.scss'
+// @ts-ignore
 import {Link} from 'react-scroll';
 import {nav} from "../../resource/links";
 import {MiniMenu} from "./MiniMenu";
