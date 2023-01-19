@@ -15,57 +15,57 @@ export const techData = [
     {
         id: '1',
         title: 'JavaScript',
-        description: '1',
+        description: 'Language for the Web',
         backgroundImage: `url(${JS})`,
     },
     {
         id: '2',
         title: 'TypeScript',
-        description: '2',
+        description: 'Strongly typed programming language',
         backgroundImage: `url(${TS})`,
     },
 
     {
         id: '3',
         title: 'React',
-        description: '3',
+        description: 'JavaScript library for building user interfaces',
         backgroundImage: `url(${React})`,
     },
     {
         id: '4',
         title: 'Redux',
-        description: '4',
+        description: 'State Container for JS Apps',
         backgroundImage: `url(${Redux})`,
     },
     {
         id: '5',
         title: 'SASS',
-        description: '5',
+        description: 'CSS extension',
         backgroundImage: `url(${SASS})`,
     },
     {
         id: '6',
         title: 'Material UI',
-        description: '9',
+        description: 'Tools to help you ship new features faster.',
         backgroundImage: `url(${MaterialUI})`,
     },
     {
         id: '7',
-        title: 'Styled Components',
-        description: '10',
+        title: 'Styled-components',
+        description: 'Customized styled components',
         backgroundImage: `url(${styledComponents})`,
     },
 
     {
         id: '8',
         title: 'Postman',
-        description: 'API platform for tests',
+        description: 'API platform for building and using APIs',
         backgroundImage: `url(${Postman})`,
     },
     {
         id: '9',
         title: 'Jest',
-        description: '6',
+        description: 'Delightful JavaScript Testing Framework.',
         backgroundImage: `url(${Jest})`,
     },
 
