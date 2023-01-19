@@ -1,74 +1,79 @@
 @import './src/styles/variables';
 @import './src/styles/mixins';
 
-.main{
-    position: relative;
+.main {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  min-height: 100vh;
+  @include bg('main.jpg');
+  z-index: -1;
+
+  //background: #000000;
+  .tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -50;
+  }
+
+  .mainHero {
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    min-height: 100vh;
-    @include  bg('main.jpg');
-    z-index: -1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include container();
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-    //background: #000000;
-    .tsparticles{
+    .heroInfo {
+      align-items: flex-start;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      @media screen and (max-width: 750px) {
+        padding-bottom: 2rem;
+      }
+
+    }
+
+    .heroPhoto {
+      position: relative;
+      height: 300px;
+      width: 300px;
+      background-image: url('../../assets/images/me.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 375px) {
+        height: 250px;
+        width: 250px;
+      }
+
+      &:before {
+        border: 5px solid #FFF;
+        content: "";
+        height: 108%;
+        left: 20px;
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        opacity: .3;
-        z-index: -50;
+        top: -20px;
+        width: 100%;
+        z-index: -1;
+      }
     }
-    .mainHero{
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        @include container();
-        @media screen and (max-width:750px){
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .heroInfo{
-            align-items: flex-start;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            @media screen and (max-width:750px){
-                padding-bottom: 2rem;
-            }
-
-        }
-        .heroPhoto{
-            position: relative;
-            height: 300px;
-            width: 300px;
-            background-image: url('../../assets/images/me.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            @media screen and (max-width:375px){
-                height: 250px;
-                width: 250px;
-            }
-            &:before{
-                border: 5px solid #FFF;
-                content: "";
-                height: 108%;
-                left: 20px;
-                position: absolute;
-                top: -20px;
-                width: 100%;
-                z-index: -1;
-            }
-        }
-    }
+  }
 }
-.typingText{
-    color: $lightSecondColor;
+
+.typingText {
+  color: $lightSecondColor;
 }

@@ -2,8 +2,6 @@ import todolist from '../assets/projects/todolist.png'
 import mountains from '../assets/projects/mountains.png'
 
 
-
-
 export const projectsData = [
     {
         id: '1',

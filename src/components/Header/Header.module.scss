@@ -1,166 +1,183 @@
 @import './src/styles/variables';
-.header{
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    background: #000000;
+
+.header {
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  background: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 80px;
+  justify-content: flex-end;
+  padding: 0 30px;
+  opacity: .8;
+  z-index: 5;
+  transition: .2s;
+
+  .headerNav {
+    position: absolute;
+    right: 5%;
+    align-items: stretch;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 80px;
-    justify-content: flex-end;
-    padding: 0 30px;
-    opacity: .8;
-    z-index: 5;
-    transition: .5s;
-    .headerNav{
+    justify-content: space-between;
+    width: 340px;
+    @media screen and (max-width: 800px) {
+      transform: translateX(100%);
+      transition: .2s;
+    }
+
+    .headerLinks {
+      position: relative;
+      color: #fff;
+      cursor: pointer;
+      font-family: Josefin Sans, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+
+      &:before {
+        content: '';
+        background-color: hsla(200, 61%, 26%, 0.75);
         position: absolute;
-        right: 5%;
-        align-items: stretch;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 340px;
-        @media screen and (max-width: 800px){
-            transform: translateX(100%);
-            transition: .5s;
-        }
-        .headerLinks{
-            position: relative;
-            color: #fff;
-            cursor: pointer;
-            font-family: Josefin Sans,sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.2;
-            &:before {
-                content: '';
-                background-color: hsla(200, 61%, 26%, 0.75);
-                position: absolute;
-                left: 0;
-                bottom: -5px;
-                width: 0;
-                height: 8px;
-                z-index: -1;
-                transition: all .3s ease-in-out;
-            }
-            &:hover:before {
-                z-index: 0;
-                width: 100%;
-            }
-            &:hover{
-                color: $lightSecondColor;
-            }
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 8px;
+        z-index: -1;
+        transition: all .2s ease-in-out;
+      }
 
+      &:hover:before {
+        z-index: 0;
+        width: 100%;
+      }
 
-        }
-        .active{
-            color: $lightSecondColor;
-        }
+      &:hover {
+        color: $lightSecondColor;
+      }
+
 
     }
-    @media screen and (max-width: 800px){
-        transform: translateX(100%);
-        transition: .5s;
-    }
-    div{
-        transform: translate(-15px, -25px);
-        z-index: 20;
-    }
-    div, div::after,div::before{
-            display: block;
-            background-color: #fff;
-            position: absolute;
-            height: 5px;
-            width: 30px;
-            transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-            border-radius: 2px;
 
-        }
-    div::before {
-        content: '';
-        margin-top: -8px;
+    .active {
+      color: $lightSecondColor;
     }
 
-    div:after {
-        content: '';
-        margin-top: 8px;
-    }
+  }
 
-}
-.miniMenu{
-    width: 100%;
-    left: -20px;
-    transform: translateY(-100%);
-    height: 50%;
-    transition: 1s;
-    @media screen and (max-width: 800px){
-        display: flex;
-        position: fixed;
-        transform: translateY(-50%);
-        transition: 1s;
-    }
+  @media screen and (max-width: 800px) {
+    transform: translateX(100%);
+    transition: .2s;
+  }
 
-}
+  div {
+    transform: translate(-15px, -25px);
+    z-index: 20;
+  }
 
-
-.miniNav{
-    height: 30%;
-    width: 10%;
-    transition: .5s;
-    background: #000000;
-    transform: translate(-100%,-800%);
-    opacity: .1;
-
-}
-.miniNavActive{
-    height: 100%;
-    width: 100%;
+  div, div::after, div::before {
+    display: block;
+    background-color: #fff;
     position: absolute;
-    background: #000000;
-    transform: translateX(-100%);
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    top: 0;
-    transition: 0.5s;
-    @media screen and (max-width: 375px){
-        justify-content: center;
-    }
-    .miniLinks{
-        color: #fff;
-        cursor: pointer;
-        margin:auto 5px;
-        font-family: Josefin Sans,sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1;
-        z-index: 5;
-        &:hover{
-            color: #61dafb;
-        }
-    }
-    button{
+    height: 5px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
 
-    }
+  }
+
+  div::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  div:after {
+    content: '';
+    margin-top: 8px;
+  }
+
 }
+
+.miniMenu {
+  width: 100%;
+  left: -20px;
+  transform: translateY(-100%);
+  height: 50%;
+  transition: .2s;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    position: fixed;
+    transform: translateY(-50%);
+    transition: .2s;
+  }
+
+}
+
+
+.miniNav {
+  height: 30%;
+  width: 10%;
+  transition: .2s;
+  background: #000000;
+  transform: translate(-100%, -800%);
+  opacity: .1;
+
+}
+
+.miniNavActive {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #000000;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  @media screen and (max-width: 375px) {
+    justify-content: center;
+  }
+
+  .miniLinks {
+    color: #fff;
+    cursor: pointer;
+    margin: auto 5px;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    z-index: 5;
+
+    &:hover {
+      color: #61dafb;
+    }
+  }
+
+  button {
+
+  }
+}
+
 .header {
-    .activeBurger::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-    }
+  .activeBurger::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
 
-    .activeBurger {
-        background: transparent;
+  .activeBurger {
+    background: transparent;
 
-    }
+  }
 
-    .activeBurger::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
-    }
+  .activeBurger::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
 }

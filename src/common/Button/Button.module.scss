@@ -3,17 +3,19 @@
   border-radius: 50px;
   border: 1px solid white;
   outline: none;
-  margin:20px auto;
+  margin: 20px auto;
   transition: all .4s;
   cursor: pointer;
-  font-family:inherit;
-  &:hover{
+  font-family: inherit;
+
+  &:hover {
     border: 1px solid white;
     background: #000;
     color: white;
     transition: all .4s;
   }
-  &:active{
+
+  &:active {
     border: 1px solid rgba(26, 80, 107, 0.75);
     background: #000;
     color: white;

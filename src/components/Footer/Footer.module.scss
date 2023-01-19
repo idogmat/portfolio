@@ -1,38 +1,45 @@
 @import './src/styles/variables';
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    background:  rgb(23, 23, 23);
-    color: $lightSecondColor;
-    min-height: 20vh;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: rgb(23, 23, 23);
+  color: $lightSecondColor;
+  min-height: 20vh;
+  padding: 20px 0;
+
+  .linksBlock {
     padding: 20px 0;
-    .linksBlock{
-        padding: 20px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .link {
-            opacity: .8;
-            margin: 0 2rem;
-            width: 3rem;
-            img{
-                width: 100%;
-            }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-        }
-        .link:hover{
-            opacity: 1;
-        }
+    .link {
+      opacity: .8;
+      margin: 0 2rem;
+      width: 3rem;
+
+      img {
+        width: 100%;
+      }
 
     }
-    h4{
-        margin: auto;
+
+    .link:hover {
+      opacity: 1;
     }
-    .copywriting{
-        font-size: 12px;
-        margin: 0 auto -20px;
-    }
+
+  }
+
+  h4 {
+    margin: auto;
+  }
+
+  .copywriting {
+    font-size: 12px;
+    margin: 0 auto -20px;
+  }
 }
 
 

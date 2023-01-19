@@ -1,5 +1,3 @@
-
-
 import JS from './../assets/icons/js.svg';
 import SASS from './../assets/icons/sass.svg';
 import TS from './../assets/icons/typescript.svg';

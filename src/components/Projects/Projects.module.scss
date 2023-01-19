@@ -1,9 +1,10 @@
 @import './src/styles/variables';
 @import './src/styles/mixins';
+
 .projects {
   min-height: 100vh;
   padding: 50px;
-  background: linear-gradient(rgb(23, 23, 23), rgb(3, 23, 47) );
+  background: linear-gradient(rgb(23, 23, 23), rgb(3, 23, 47));
 
   h2 {
     font-size: 3rem;

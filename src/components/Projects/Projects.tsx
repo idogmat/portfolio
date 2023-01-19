@@ -9,7 +9,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className={s.projectsContainer}>
                 <div className={s.projectsRow}>
-                    {projectsData.map((p,i)=><Project key={p.id+i} {...p}/>)}
+                    {projectsData.map((p, i) => <Project key={p.id + i} {...p}/>)}
                 </div>
             </div>
         </div>

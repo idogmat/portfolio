@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import s from "./Skills.module.scss";
+
 const Zoom = require('react-reveal/Zoom')
 
 type SkillType = {

@@ -4,10 +4,11 @@ import s from "./Header.module.scss";
 // @ts-ignore
 import {Link} from "react-scroll";
 
-export const MiniMenu: FC<{ open: boolean,close:()=>void }> = ({open,close}) => {
-  return (
-    <nav className={open ? s.miniNavActive : s.miniNav}>
-      {nav.map(el => <Link activeClass={s.active} key={el.point} {...el} className={s.miniLinks}>{el.point}</Link>)}
-    </nav>
-  )
+export const MiniMenu: FC<{ open: boolean, close: () => void }> = ({open, close}) => {
+    return (
+        <nav className={open ? s.miniNavActive : s.miniNav}>
+            {nav.map(el => <Link activeClass={s.active} key={el.point} {...el}
+                                 className={s.miniLinks}>{el.point}</Link>)}
+        </nav>
+    )
 }

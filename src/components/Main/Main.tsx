@@ -4,8 +4,9 @@ import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
 import TypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt'
+
 const Fade = require('react-reveal/Fade')
-const options={
+const options = {
     fullScreen: {
         enable: false
     },
@@ -47,10 +48,10 @@ const options={
 }
 
 const Main = () => {
-    const particlesInit = useCallback(async (engine:any) => {
+    const particlesInit = useCallback(async (engine: any) => {
         await loadFull(engine);
     }, []);
-    const particlesLoaded = useCallback(async (container:any) => {
+    const particlesLoaded = useCallback(async (container: any) => {
         await container;
     }, []);
 
@@ -65,22 +66,23 @@ const Main = () => {
             />
             <div className={s.mainHero}>
                 <Fade left>
-                <div className={s.heroInfo}>
-                    <span>Hi there!</span>
-                    <h2>I'm Evgeny Rodin</h2>
-                    <TypingEffect speed={50} eraseSpeed={20} cursorClassName={s.typingText} text={'Front-end developer'}/>
-                </div>
-                </Fade >
-                <Fade right>
-                <Tilt  className={'Tilt'}>
-                    <div className={s.heroPhoto}>
-                        <div className={s.image}>
-                        </div>
+                    <div className={s.heroInfo}>
+                        <span>Hi there!</span>
+                        <h2>I'm Evgeny Rodin</h2>
+                        <TypingEffect speed={50} eraseSpeed={20} cursorClassName={s.typingText}
+                                      text={'Front-end developer'}/>
                     </div>
-                </Tilt>
                 </Fade>
-                </div>
+                <Fade right>
+                    <Tilt className={'Tilt'}>
+                        <div className={s.heroPhoto}>
+                            <div className={s.image}>
+                            </div>
+                        </div>
+                    </Tilt>
+                </Fade>
             </div>
+        </div>
     );
 };
 

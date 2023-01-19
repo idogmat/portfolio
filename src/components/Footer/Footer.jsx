@@ -4,15 +4,14 @@ import {contactLinks} from "../../resource/links";
 
 const Fade = require('react-reveal/Fade')
 const Footer = () => {
-    return (
-        <footer className={s.footer}>
+    return (<footer className={s.footer}>
             <Fade left>
                 <h4>Evgeny Rodin</h4>
             </Fade>
             <Fade right>
                 <div className={s.linksBlock}>
                     {contactLinks.map((el, i) => {
-                        return <a className={s.link} target="_blank" key={i} href={el.link}>
+                        return <a rel="noreferrer" className={s.link} target="_blank" key={i} href={el.link}>
                             <img src={el.icon} alt={el.link}/>
                         </a>
                     })}
@@ -21,8 +20,7 @@ const Footer = () => {
             <span className={s.copywriting}>
                 © 2022 All Rights Reserved
             </span>
-        </footer>
-    );
+        </footer>);
 };
 
 export default Footer;

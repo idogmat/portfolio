@@ -4,15 +4,19 @@ import s from './Header.module.scss'
 import {Link} from 'react-scroll';
 import {nav} from "../../resource/links";
 import {MiniMenu} from "./MiniMenu";
+
 const Header = () => {
-const [miniMenu,setMimiMenu]=useState(false)
-const close=()=>setMimiMenu(false)
+    const [miniMenu, setMimiMenu] = useState(false)
+    const close = () => setMimiMenu(false)
     return (
         <header className={s.header}>
             <nav className={s.headerNav}>
-                {nav.map(el=><Link activeClass={s.active} key={el.point} {...el} className={s.headerLinks}>{el.point}</Link>)}
+                {nav.map(el => <Link activeClass={s.active} key={el.point} {...el}
+                                     className={s.headerLinks}>{el.point}</Link>)}
             </nav>
-            <div onClick={()=>setMimiMenu(s=>!s)} className={miniMenu ? s.miniMenu +' '+ s.activeBurger :  s.miniMenu }/> : <MiniMenu open={miniMenu} close={close}/>
+            <div onClick={() => setMimiMenu(s => !s)}
+                 className={miniMenu ? s.miniMenu + ' ' + s.activeBurger : s.miniMenu}/>
+            : <MiniMenu open={miniMenu} close={close}/>
 
         </header>
     );
