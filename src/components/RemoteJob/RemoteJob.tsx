@@ -11,8 +11,7 @@ const RemoteJob = () => {
                 <h2>Search devs for remote work?
                     Here I am!</h2>
             </Zoom>
-            <Button title={'Press Me!'}/>
-
+            <Button id={'#contacts'} title={'Press Me!'}/>
         </div>
         <Contacts/>
     </div>
