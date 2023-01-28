@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
             </Fade>
             <span className={s.copywriting}>
-                © 2022 All Rights Reserved
+                © {new Date().getFullYear()} All Rights Reserved
             </span>
         </footer>);
 };

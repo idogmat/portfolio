@@ -2,7 +2,6 @@
 @import './src/styles/mixins';
 
 .projects {
-  min-height: 100vh;
   padding: 50px;
   background: linear-gradient(rgb(23, 23, 23), rgb(3, 23, 47));
 
@@ -20,7 +19,6 @@
     @include container();
 
     .projectsRow {
-      align-items: center;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

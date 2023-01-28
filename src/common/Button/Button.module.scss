@@ -1,3 +1,8 @@
+a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0 auto;
+}
 .button {
   width: 200px;
   border-radius: 50px;
@@ -21,8 +26,11 @@
     color: white;
     transition: all .4s;
   }
-  a{
-    text-decoration: none;
-    color: inherit;
+  &:focus {
+    border: 1px solid white;
+    background: #000;
+    color: white;
+    transition: all .4s;
   }
+
 }

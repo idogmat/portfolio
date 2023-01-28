@@ -1,10 +1,9 @@
 @import './src/styles/variables';
 @import './src/styles/mixins';
+
 .skills {
-  min-height: 100vh;
   padding: 50px;
   background: linear-gradient(rgb(0, 0, 0), rgb(23, 23, 23));
-
 
   h2 {
     font-size: 4rem;
@@ -26,29 +25,32 @@
       justify-content: center;
       width: 100%;
 
-        .skillElement {
-            align-items: center;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+      .skillElement {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
-            margin: 30px 5px 0;
-            text-align: center;
-            width: 280px;
-          span{
-            //text-align:
-          }
-          @media screen and (max-width: 725px){
-            width: 120px;
-          }
-            .skillIcon {
-                width: 4rem;
-                height: 4rem;
-                background-size: cover;
+        margin: 30px 5px 0;
+        text-align: center;
+        width: 280px;
 
-            }
+        span {
+          //text-align:
         }
+
+        @media screen and (max-width: 725px) {
+          width: 120px;
+        }
+
+        .skillIcon {
+          width: 4rem;
+          height: 4rem;
+          background-size: cover;
+
+        }
+      }
     }
 
   }

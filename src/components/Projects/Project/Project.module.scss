@@ -3,11 +3,12 @@
 
 .projectElement {
   align-items: center;
+  max-width: 350px;
   color: #fff;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 30px 5px 0;
   text-align: center;
   padding: 0 1rem;

@@ -6,12 +6,10 @@
   display: flex;
   min-height: 50vh;
   flex-direction: column;
-
-
   .sendForm {
     @include container();
     max-width: 540px;
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 560px) {

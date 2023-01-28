@@ -6,17 +6,20 @@
   position: relative;
   z-index: 1;
   font-family: $textFont;
+
   > div {
     display: flex;
     flex-direction: column;
-   > h2{
+
+    > h2 {
       color: white;
-      margin: auto;
       font-family: $titleFont;
+      margin: 0 auto;
     }
-    >div>h2{
+
+    > div > h2 {
       color: white;
-      margin: auto;
+      margin: 0 auto;
       font-family: $titleFont;
     }
 
