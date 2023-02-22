@@ -8,10 +8,9 @@ const RemoteJob = () => {
     return <div className={s.remoteContacts}>
         <div className={s.remote}>
             <Zoom>
-                <h2>Search devs for remote work?
-                    Here I am!</h2>
+                <h2>Remote Work And Relocation Are Considered By Me</h2>
             </Zoom>
-            <Button id={'#contacts'} title={'Press Me!'}/>
+            {/*<Button id={'#contacts'} title={'HIRE'}/>*/}
         </div>
         <Contacts/>
     </div>

@@ -24,7 +24,7 @@
       background: $bgSecondColor;
       border-radius: 30px;
       border: none;
-      border-bottom: 1px solid #4a4a4a;
+      border-bottom: 3px solid #4a4a4a;
       box-sizing: border-box;
       outline: none;
       resize: none;
@@ -37,17 +37,17 @@
       }
 
       &:focus {
-        border-bottom: 1px solid white;
+        border-bottom: 3px solid white;
         transition: all .4s;
       }
     }
 
     textarea {
-      border-top: 1px solid #4a4a4a;
-
+      border-top: 3px solid #4a4a4a;
+      overflow: hidden;
       &:focus {
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
         transition: all .4s;
       }
     }

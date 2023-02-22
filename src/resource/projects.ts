@@ -7,7 +7,7 @@ export const projectsData = [
     {
         id: '1',
         title: 'Todolist',
-        description: 'You may create tasks and forget complete them',
+        description: 'Task manager',
         tech: ['React', 'TypeScript', 'redux/toolkit', 'SCSS'],
         backgroundImage: `url(${todolist})`,
         repoLink: 'https://github.com/idogmat/todo-list-ts',
@@ -16,8 +16,8 @@ export const projectsData = [
     {
         id: '2',
         title: 'Portfolio',
-        description: 'App with admin-panel and so long loading...',
-        tech: ['Vue', 'Vuex', 'pug', 'postcss'],
+        description: 'App with admin-panel and long loading...',
+        tech: ['Vue', 'Vuex', 'pug', 'postcss','webpack'],
         backgroundImage: `url(${mountains})`,
         repoLink: 'https://github.com/idogmat/Mountains',
         demoLink: 'https://idogmat.github.io/Mountains/'
@@ -25,11 +25,11 @@ export const projectsData = [
     {
         id: '3',
         title: 'Cards',
-        description: 'App with admin-panel and so long loading...',
+        description: 'Custom cards for learn and check self knowledge',
         tech: ['React', 'Redux', 'TypeScript', 'redux/toolkit', 'Styled-components'],
         backgroundImage: `url(${cards})`,
-        repoLink: 'https://github.com/idogmat/Mountains',
-        demoLink: 'https://idogmat.github.io/Mountains/'
+        repoLink: 'https://github.com/idogmat/card',
+        demoLink: 'https://idogmat.github.io/card/'
     },
 
 ]

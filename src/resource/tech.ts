@@ -9,6 +9,8 @@ import styledComponents from './../assets/icons/styled-svg.svg';
 import GIT from './../assets/icons/git.svg';
 import Storybook from './../assets/icons/storybook.svg';
 import Postman from './../assets/icons/postman.svg';
+import Node from './../assets/icons/node-js.svg';
+import Docker from './../assets/icons/docker.svg';
 
 
 export const techData = [
@@ -46,7 +48,7 @@ export const techData = [
     {
         id: '6',
         title: 'Material UI',
-        description: 'Tools to help you ship new features faster.',
+        description: 'Tools to help you ship new features faster',
         backgroundImage: `url(${MaterialUI})`,
     },
     {
@@ -65,21 +67,31 @@ export const techData = [
     {
         id: '9',
         title: 'Jest',
-        description: 'Delightful JavaScript Testing Framework.',
+        description: 'Delightful JavaScript Testing Framework',
         backgroundImage: `url(${Jest})`,
     },
 
     {
         id: '10',
         title: 'Storybook',
-        description: 'Tool for building UI components and pages in isolation.',
+        description: 'Tool for building UI components and pages in isolation',
         backgroundImage: `url(${Storybook})`,
     },
     {
         id: '11',
         title: 'GIT',
-        description: 'Source code management.',
+        description: 'Source code management',
         backgroundImage: `url(${GIT})`,
+    }, {
+        id: '12',
+        title: 'Node.js',
+        description: 'Server environment',
+        backgroundImage: `url(${Node})`,
+    }, {
+        id: '13',
+        title: 'Docker',
+        description: 'Development environment',
+        backgroundImage: `url(${Docker})`,
     },
 
 
