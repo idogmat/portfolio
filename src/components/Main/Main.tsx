@@ -33,10 +33,8 @@ const options = {
         number: {
             density: {
                 enable: true,
-                value_area: 1500,
             },
-            // value: 80,
-            value: 200,
+            value: 80,
         },
         opacity: {
             value: 0.7,
